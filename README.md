@@ -1,3 +1,3 @@
-# Beauty-Chairs
+# Conquest Watches
 
 Layout project

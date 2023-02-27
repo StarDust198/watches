@@ -1,0 +1,44 @@
+@import '../base/variables';
+
+.header {
+  padding-top: 2rem;
+  padding-bottom: 1.75rem;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.14em;
+    line-height: 1.33;
+  }
+  &__menu {
+    // margin-top: 0.25rem;
+    &-list {
+      display: flex;
+      gap: 4rem;
+    }
+  }
+  &__icons {
+    display: flex;
+    gap: 1.5rem;
+  }
+  &__icon-button {
+    position: relative;
+    &-badge {
+      position: absolute;
+      top: -0.25rem;
+      right: -0.375rem;
+      height: 0.75rem;
+      width: 0.75rem;
+      line-height: 0.75rem;
+      border-radius: 50%;
+      z-index: 5;
+      background-color: #e6c8b4;
+      font-size: 0.5rem;
+    }
+  }
+}
