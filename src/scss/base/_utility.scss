@@ -31,6 +31,9 @@
 .text-dark {
   color: $dark;
 }
+.text-darker {
+  color: $darker;
+}
 .font-bold {
   font-weight: 700;
 }
@@ -65,7 +68,19 @@
 .d-none {
   display: none;
 }
-
 .d-block {
   display: block;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.grid {
+  display: grid;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
 }

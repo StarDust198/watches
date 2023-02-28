@@ -1,0 +1,107 @@
+.intro {
+  &__wrapper {
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: 20.75rem 1fr;
+  }
+  &__text-block {
+    padding-left: 4.5rem;
+    align-self: center;
+    z-index: 5;
+  }
+  &__image-block {
+    position: relative;
+  }
+  &__title {
+    white-space: nowrap;
+  }
+  &__subtitle {
+    margin-top: 1rem;
+  }
+  &__descr {
+    margin-top: 2.5rem;
+    max-width: 34ch;
+  }
+  &__btn {
+    margin-top: 4rem;
+  }
+  &__image {
+    max-width: 80%;
+  }
+  &__price {
+    top: 15%;
+    left: 15%;
+    position: absolute;
+  }
+  &__param {
+    position: absolute;
+    bottom: 15%;
+    right: 2rem;
+  }
+}
+
+@media (max-width: $md1+px) {
+  .intro {
+    &__text-block {
+    }
+    &__image-block {
+    }
+    &__price {
+    }
+    &__param {
+      right: 0;
+    }
+  }
+}
+@media (max-width: $md2+px) {
+  .intro {
+    &__wrapper {
+      grid-template-columns: 16rem 1fr;
+    }
+    &__title {
+      &::before {
+        display: none;
+      }
+    }
+    &__text-block {
+      padding-left: 0;
+    }
+    &__image {
+      max-width: 100%;
+    }
+    &__price {
+      top: unset;
+      bottom: 15%;
+    }
+    &__param {
+      display: none;
+    }
+  }
+}
+@media (max-width: $md3+px) {
+  .intro {
+    &__wrapper {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+    &__text-block {
+      margin-top: 3rem;
+      text-align: center;
+    }
+    &__descr {
+      margin-inline: auto;
+    }
+    &__image-block {
+      margin-top: 2rem;
+    }
+    &__image {
+      justify-self: center;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    &__price {
+    }
+    &__param {
+    }
+  }
+}

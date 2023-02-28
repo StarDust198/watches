@@ -1,0 +1,22 @@
+@import '../base/variables';
+
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  color: $white;
+  font-size: $fs20;
+  padding: 1.625rem 2.375rem;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  background-color: $darkgray;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    background-color: $dark;
+  }
+  &_bright {
+    background-color: #d4b098;
+    &:hover {
+      background-color: #d2a181;
+    }
+  }
+}

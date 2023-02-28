@@ -1,0 +1,66 @@
+.goods {
+  margin-top: 5rem;
+  &__wrapper {
+    display: grid;
+  }
+  &__title {
+    justify-self: center;
+  }
+  &__link {
+    justify-self: end;
+    font-weight: 500;
+    position: relative;
+    line-height: 1.2;
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -0.75rem;
+      width: 100%;
+      height: 1px;
+      background-color: #c4c0b6;
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover {
+      &::before {
+        background-color: $dark;
+      }
+    }
+  }
+  &__grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: $md2+px) {
+  .goods {
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__card {
+      &-3 {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: $md3+px) {
+  .goods {
+    &__grid {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+    &__card {
+      &-3 {
+        display: block;
+      }
+    }
+    &__link {
+      margin-top: 2rem;
+      order: 10;
+      justify-self: center;
+    }
+  }
+}

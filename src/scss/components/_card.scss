@@ -1,0 +1,33 @@
+@import '../base/variables';
+
+.card {
+  padding: 2.5rem;
+  background-color: $bgcolor;
+  &__title {
+    font-size: $fs30;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    font-family: $ffPlay;
+    color: $darker;
+  }
+  &__price {
+    font-family: $ffPrata;
+    font-size: $fs20;
+    color: $darker;
+  }
+  &__image {
+    padding-inline: -0.5rem;
+  }
+  &__link {
+    font-family: $ffPlay;
+    margin-left: 3rem;
+    position: relative;
+  }
+}
+
+@media (max-width: $md2+px) {
+  .card {
+    text-align: center;
+  }
+}

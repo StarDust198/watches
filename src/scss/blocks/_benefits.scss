@@ -1,0 +1,95 @@
+.benefits {
+  margin-top: 5.5rem;
+  // background-color: rgb(247, 245, 239);
+  background-image: url('../img/bg/lines_banner.png'),
+    linear-gradient(
+      90deg,
+      rgba(247, 245, 239, 1) 0%,
+      rgba(253, 253, 251, 1) 100%
+    );
+  background-position: right;
+  background-repeat: no-repeat;
+  &__wrapper {
+    padding-top: 3rem;
+    padding-inline: 4rem;
+    display: grid;
+    gap: 1.5rem 4.5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__image-block {
+    justify-self: end;
+  }
+  &__text-block {
+    justify-self: start;
+    align-self: center;
+  }
+  &__title {
+  }
+  &__descr {
+    margin-top: 2.25rem;
+    max-width: 45ch;
+  }
+  &__btn {
+    margin-top: 2.75rem;
+  }
+  &__pagination {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 1.25rem;
+    justify-self: end;
+    margin-right: 2rem;
+    margin-bottom: 1.5rem;
+    &__button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      margin-bottom: 2px;
+    }
+  }
+}
+
+@media (max-width: $md1+px) {
+}
+@media (max-width: $md2+px) {
+  .benefits {
+    &__wrapper {
+      padding-top: 4rem;
+      padding-inline: 0;
+      display: grid;
+      gap: 1.5rem 3rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__image {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+@media (max-width: $md3+px) {
+  .benefits {
+    background-size: cover;
+    &__wrapper {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+    &__image-block {
+      margin-top: 2rem;
+      max-width: 70%;
+      order: 2;
+      justify-self: center;
+    }
+    &__text-block {
+      order: 1;
+      justify-self: center;
+      align-self: center;
+      text-align: center;
+    }
+    &__pagination {
+      order: 3;
+      justify-self: center;
+      margin-right: 0;
+      margin-bottom: 3rem;
+    }
+  }
+}

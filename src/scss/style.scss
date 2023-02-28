@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,regular,500,700&display=swap&subset=cyrillic-ext'");
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:regular,700&display=swap&subset=cyrillic-ext'");
-@import url("https://fonts.googleapis.com/css?family=Prata:regular&display=swap&subset=cyrillic-ext'");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Prata&family=Roboto:wght@300;400;500;700&display=swap');
 
 @import 'base/variables';
 @import 'base/reset';
@@ -10,7 +8,7 @@ body {
   font-family: $ffRoboto;
   color: $black;
   background-color: $white;
-  line-height: 1.2;
+  line-height: 1.33;
   min-height: 100vh;
 }
 
@@ -29,8 +27,15 @@ body {
   }
 }
 
-// @import 'components/button.scss';
-
 @import 'blocks/header';
+@import 'blocks/intro';
+@import 'blocks/goods';
+@import 'blocks/benefits';
+@import 'blocks/contacts';
+@import 'blocks/footer';
 
 @import 'components/iconbutton';
+@import 'components/button';
+@import 'components/title';
+@import 'components/dash';
+@import 'components/card';

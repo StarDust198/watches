@@ -3,7 +3,10 @@
   @@include('html/head.html', { "title": "Conquest Watches" })
   <body>
     @@include('html/header.html', {})
-    <main>@@include('html/intro.html', {})</main>
+    <main>
+      @@include('html/intro.html', {}) @@include('html/goods.html', {})
+      @@include('html/benefits.html', {}) @@include('html/contacts.html', {})
+    </main>
     @@include('html/footer.html', {})
     <script src="js/app.min.js"></script>
   </body>

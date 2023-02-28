@@ -1,0 +1,23 @@
+.dash {
+  &::before {
+    content: '';
+    position: absolute;
+    left: -4rem;
+    bottom: 40%;
+    width: 3rem;
+    height: 0;
+    // Color found only here
+    border: 1px solid #8b8371;
+  }
+  &_right::before {
+    left: unset;
+    right: -4rem;
+  }
+  &_small {
+    &::before {
+      bottom: 40%;
+      width: 1.75rem;
+      left: -2.75rem;
+    }
+  }
+}
