@@ -41,7 +41,8 @@
     }
     &__card {
       &-3 {
-        display: none;
+        grid-column: span 2;
+        justify-self: center;
       }
     }
   }
@@ -54,6 +55,7 @@
     }
     &__card {
       &-3 {
+        grid-column: unset;
         display: block;
       }
     }

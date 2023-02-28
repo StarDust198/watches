@@ -5,7 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Prata&family=Roboto:wght@300;400;500;700&display=swap&_v=20230301003421"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.min.css?_v=20230301003421" />
   <title>Conquest Watches</title>
 </head>
 
@@ -14,7 +20,7 @@
   <div class="container">
     <div class="header__wrapper">
       <div class="header__logo flex">
-        <img src="img/logo.png" alt="Logo" />
+        <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Logo" /></picture>
         <div class="uppercase header__title fs20 ffPlay text-dark">
           CONQUEST
         </div>
@@ -60,6 +66,13 @@
           <div class="header__icon-button-badge d-none">0</div>
         </button>
       </div>
+      <button class="header__menu-button">
+        <img
+          src="img/icons/burger.svg"
+          alt="Открыть меню"
+          class="header__menu-button-icon"
+        />
+      </button>
     </div>
   </div>
 </header>
@@ -97,19 +110,19 @@
         <div class="goods__card goods__card-1 card">
           <div class="card__title">RADO</div>
           <div class="card__price">65 300 ₽</div>
-          <img src="img/watch_1plus.png" class="card__img" />
+          <picture><source srcset="img/watch_1plus.webp" type="image/webp"><img src="img/watch_1plus.png" class="card__img" /></picture>
           <a href="#" class="card__link dash dash_small">Подробнее</a>
         </div>
         <div class="goods__card goods__card-2 card">
           <div class="card__title">BVLGARI</div>
           <div class="card__price">81 700 ₽</div>
-          <img src="img/watch_3plus.png" class="card__img" />
+          <picture><source srcset="img/watch_3plus.webp" type="image/webp"><img src="img/watch_3plus.png" class="card__img" /></picture>
           <a href="#" class="card__link dash dash_small">Подробнее</a>
         </div>
         <div class="goods__card goods__card-3 card">
           <div class="card__title">BVLGARI</div>
           <div class="card__price">72 700 ₽</div>
-          <img src="img/watch_4plus.png" class="card__img" />
+          <picture><source srcset="img/watch_4plus.webp" type="image/webp"><img src="img/watch_4plus.png" class="card__img" /></picture>
           <a href="#" class="card__link dash dash_small">Подробнее</a>
         </div>
       </div>
@@ -181,21 +194,28 @@
         </div>
       </div>
       <div class="contacts__images-block">
-        <img class="contacts__image-1" src="img/photo_1.jpg" alt="Watch" />
-        <img class="contacts__image-2" src="img/photo_2.jpg" alt="Watch" />
-        <img class="contacts__image-3" src="img/photo_3.jpg" alt="Watch" />
+        <picture class="contacts__image-1">
+          <img src="img/photo_1.jpg" alt="Watch" />
+        </picture>
+        <picture class="contacts__image-2"
+          ><img src="img/photo_2.jpg" alt="Watch"
+        /></picture>
+        <picture class="contacts__image-3"
+          ><img src="img/photo_3.jpg" alt="Watch"
+        /></picture>
       </div>
     </div>
   </div>
 </section>
 
     </main>
+    <div class="modal d-none"></div>
     <footer class="footer bg-dark text-white fs20">
   <div class="container">
     <div class="footer__wrapper">
       <div class="footer__block">
         <div class="footer__logo flex">
-          <img src="img/logo-white.png" alt="Logo" />
+          <picture><source srcset="img/logo-white.webp" type="image/webp"><img src="img/logo-white.png" alt="Logo" /></picture>
           <div class="uppercase footer__logo-title fs30 ffPlay">CONQUEST</div>
         </div>
         <div class="footer__elem">
@@ -260,6 +280,6 @@
   </div>
 </footer>
 
-    <script src="js/app.min.js"></script>
+    <script src="js/app.min.js?_v=20230301003421"></script>
   </body>
 </html>

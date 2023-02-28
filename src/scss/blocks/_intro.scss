@@ -105,3 +105,11 @@
     }
   }
 }
+
+@media (max-width: $md4+px) {
+  .intro {
+    &__title {
+      white-space: unset;
+    }
+  }
+}

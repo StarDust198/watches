@@ -57,12 +57,18 @@
     &__wrapper {
       grid-template-columns: 1fr;
       gap: 4rem;
+      padding-bottom: 5rem;
     }
     &__logo {
       justify-content: center;
     }
     &__block:first-child {
       order: 4;
+    }
+    &__elem {
+      &:nth-child(2) {
+        margin-top: 1.5rem;
+      }
     }
   }
 }

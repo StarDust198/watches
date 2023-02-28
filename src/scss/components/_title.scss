@@ -2,3 +2,9 @@
   font-size: $fs60;
   font-family: $ffPlay;
 }
+
+@media (max-width: $md3+px) {
+  .title {
+    text-align: center;
+  }
+}

@@ -16,7 +16,6 @@
     line-height: 1.33;
   }
   &__menu {
-    // margin-top: 0.25rem;
     &-list {
       display: flex;
       gap: 4rem;
@@ -47,10 +46,11 @@
       font-size: 0.5rem;
     }
   }
+  &__menu-button {
+    display: none;
+  }
 }
 
-@media (max-width: $md1+px) {
-}
 @media (max-width: $md2+px) {
   .header {
     &__menu {
@@ -60,5 +60,44 @@
     }
   }
 }
+
 @media (max-width: $md3+px) {
+  .header {
+    &__menu {
+      background: $bgcolor;
+      z-index: 10;
+      position: fixed;
+      width: 67%;
+      height: 100vh;
+      top: 0;
+      bottom: 0;
+      right: -67%;
+      transition: 0.5s right ease-in-out;
+      padding: 20vh 3rem;
+      &-list {
+        gap: 3rem;
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        flex-direction: column;
+      }
+    }
+
+    &__menu-button {
+      z-index: 15;
+      display: block;
+      height: 2rem;
+      width: 2rem;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: $md4+px) {
+  .header {
+    &__icons {
+      gap: 1rem;
+    }
+  }
 }
